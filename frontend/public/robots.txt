@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rs-atta-chakki.vercel.app/sitemap.xml
