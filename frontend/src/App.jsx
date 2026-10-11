@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { Header } from './components/layout/Header';
@@ -24,14 +24,24 @@ function ScrollToTop() {
 }
 
 export default function App() {
+  const [initialLoading, setInitialLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setInitialLoading(false);
+    }, 1200);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <BrowserRouter>
+      {initialLoading && <LoadingFallback message="Connect to RS Atta Chakki..." />}
       <CartProvider>
         <ScrollToTop />
         <div className="min-h-screen flex flex-col bg-[#FFF9EF] text-[#292B24] font-sans antialiased selection:bg-[#D5A447] selection:text-white">
           <Header />
           <main className="flex-grow">
-            <Suspense fallback={<LoadingFallback />}>
+            <Suspense fallback={<LoadingFallback message="Connect to RS Atta Chakki..." />}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
