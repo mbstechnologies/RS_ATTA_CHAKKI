@@ -15,7 +15,7 @@ export function HeroAttaScene({ brandName = "Shuddh Chakki Atta", weight = "5 kg
   };
 
   return (
-    <div className="relative w-full h-[480px] sm:h-[550px] lg:h-[620px] overflow-hidden rounded-2xl bg-[#FFFBEB]">
+    <div className="relative w-full h-[300px] xs:h-[360px] sm:h-[480px] lg:h-[620px] overflow-hidden rounded-2xl bg-[#FFFBEB]">
       <img
         src={imgSrc}
         alt={`${brandName} - ${weight}`}

@@ -26,15 +26,15 @@ export function Process() {
   ];
 
   return (
-    <div className="space-y-16 pb-20 pt-20 sm:pt-24">
+    <div className="space-y-12 sm:space-y-16 pb-16 sm:pb-20 pt-20 sm:pt-24">
       {/* PAGE HERO & MILLING PROCESS SCENE */}
-      <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-5">
+      <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-4 sm:space-y-5">
         <RevealSection>
           <div className="text-center space-y-1.5 max-w-3xl mx-auto">
             <p className="text-[#2E7D46] text-xs sm:text-sm font-extrabold tracking-wider uppercase">
               From Field to Table
             </p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#2E7D46] tracking-tight font-heading">
+            <h1 className="text-2xl sm:text-4xl font-extrabold text-[#2E7D46] tracking-tight font-heading">
               Our Fresh Milling Process
             </h1>
             <p className="text-xs sm:text-sm text-[#7A4E27] max-w-2xl mx-auto">
@@ -48,8 +48,6 @@ export function Process() {
         </RevealSection>
       </section>
 
-
-
       {/* BEST QUALITY PACKAGING SHOWCASE SECTION */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <RevealSection>
@@ -61,11 +59,11 @@ export function Process() {
         </RevealSection>
 
         <RevealSection delay={0.2}>
-          <div className="glass-panel rounded-3xl p-6 sm:p-8 lg:p-10 border border-[#D59B2D]/30 shadow-xl bg-gradient-to-br from-[#FEFCE8] via-[#FFFBEB] to-[#FEFCE8]">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          <div className="glass-panel rounded-2xl sm:rounded-3xl p-4 sm:p-8 lg:p-10 border border-[#D59B2D]/30 shadow-xl bg-gradient-to-br from-[#FEFCE8] via-[#FFFBEB] to-[#FEFCE8]">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-center">
               {/* Left Column: 03.png Packaging Image (Exact 1167/1347 aspect ratio, zero crop) */}
               <div className="lg:col-span-5 relative flex flex-col justify-center">
-                <div className="relative rounded-3xl overflow-hidden border-2 border-[#D59B2D]/40 shadow-2xl group bg-[#FFFDE7] w-full max-w-md mx-auto aspect-[1167/1347]">
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#D59B2D]/40 shadow-2xl group bg-[#FFFDE7] w-full max-w-[280px] sm:max-w-md mx-auto aspect-[1167/1347]">
                   <img
                     src="/03.png"
                     alt="RS Kissan Fresh Atta - Premium Moisture-Lock Packaging"
@@ -152,12 +150,12 @@ export function Process() {
       {/* ATTA STORAGE GUIDELINES SECTION */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <RevealSection>
-          <div className="glass-panel rounded-3xl p-8 sm:p-12 border border-[#D59B2D]/30 shadow-xl space-y-8 bg-gradient-to-br from-[#FEFCE8] via-[#FFFBEB] to-[#FEFCE8]">
-            <div className="text-center space-y-2">
-              <p className="text-[#2E7D46] text-xs sm:text-sm font-bold uppercase tracking-wider mb-2">
+          <div className="glass-panel rounded-2xl sm:rounded-3xl p-5 sm:p-10 lg:p-12 border border-[#D59B2D]/30 shadow-xl space-y-6 sm:space-y-8 bg-gradient-to-br from-[#FEFCE8] via-[#FFFBEB] to-[#FEFCE8]">
+            <div className="text-center space-y-1.5 sm:space-y-2">
+              <p className="text-[#2E7D46] text-xs sm:text-sm font-bold uppercase tracking-wider mb-1">
                 💡 Helpful Storage Tips
               </p>
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#4A2C11]">
+              <h3 className="text-xl sm:text-3xl font-extrabold text-[#4A2C11]">
                 Guidelines for Keeping Atta Fresh
               </h3>
               <p className="text-xs sm:text-sm text-[#7A4E27]">
@@ -165,13 +163,13 @@ export function Process() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {storageTips.map((tip, i) => (
-                <div key={i} className="bg-white/90 p-5 rounded-2xl border border-[#F5E6B9] space-y-2 shadow-sm">
-                  <div className="w-8 h-8 rounded-full bg-[#4A2C11]/10 text-[#4A2C11] flex items-center justify-center font-bold text-sm">
+                <div key={i} className="bg-white/90 p-4 sm:p-5 rounded-2xl border border-[#F5E6B9] space-y-2 shadow-sm">
+                  <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#4A2C11]/10 text-[#4A2C11] flex items-center justify-center font-bold text-xs sm:text-sm">
                     ✓
                   </div>
-                  <h4 className="font-bold text-[#4A2C11] text-sm">{tip.title}</h4>
+                  <h4 className="font-bold text-[#4A2C11] text-xs sm:text-sm">{tip.title}</h4>
                   <p className="text-xs text-[#3D230D]/75 leading-relaxed">{tip.desc}</p>
                 </div>
               ))}

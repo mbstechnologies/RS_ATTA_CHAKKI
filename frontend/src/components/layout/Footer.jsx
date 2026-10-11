@@ -5,24 +5,24 @@ import { siteConfig } from '../../data/siteConfig';
 
 export function Footer() {
   return (
-    <footer className="bg-[#3D230D] text-[#FEFCE8] relative overflow-hidden pt-16 pb-12">
+    <footer className="bg-[#3D230D] text-[#FEFCE8] relative overflow-hidden pt-10 sm:pt-16 pb-8 sm:pb-12">
       {/* Decorative Golden Top Line */}
       <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#3D230D] via-[#D59B2D] to-[#3D230D]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-[#D59B2D]/20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 pb-8 sm:pb-12 border-b border-[#D59B2D]/20">
           {/* Brand Info Column */}
-          <div className="lg:col-span-4 space-y-4">
+          <div className="lg:col-span-4 space-y-3.5 sm:space-y-4">
             <div className="flex items-center gap-3">
               <img
                 src="/logo.png"
                 alt="RS Atta Chakki Logo"
                 loading="lazy"
                 decoding="async"
-                className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-[#4A2C11] shadow-lg"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full object-cover shrink-0 border-2 border-[#4A2C11] shadow-lg"
               />
               <div>
-                <span className="block text-2xl font-extrabold text-[#FEFCE8] tracking-tight">
+                <span className="block text-xl sm:text-2xl font-extrabold text-[#FEFCE8] tracking-tight">
                   {siteConfig.brandName}
                 </span>
                 <span className="block text-xs text-[#D59B2D] font-semibold">

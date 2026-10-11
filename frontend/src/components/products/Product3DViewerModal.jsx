@@ -36,23 +36,23 @@ export function Product3DViewerModal({ product, onClose }) {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-md animate-fade-in overflow-y-auto">
-      <div className="relative w-full max-w-5xl bg-[#FEFCE8] rounded-3xl overflow-hidden shadow-2xl border border-[#D59B2D]/40 my-8">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/70 backdrop-blur-md animate-fade-in overflow-y-auto">
+      <div className="relative w-full max-w-5xl bg-[#FEFCE8] rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border border-[#D59B2D]/40 my-4 sm:my-8">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-20 p-2.5 rounded-full bg-white/90 hover:bg-white text-[#3D230D] transition-all shadow-md hover:scale-105"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 p-2 sm:p-2.5 rounded-full bg-white/90 hover:bg-white text-[#3D230D] transition-all shadow-md hover:scale-105"
           aria-label="Close"
         >
-          <X className="w-6 h-6" />
+          <X className="w-5 h-5 sm:w-6 sm:h-6" />
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-12">
           {/* Left Column: 3D Canvas */}
-          <div className="lg:col-span-6 h-[400px] lg:h-[580px] relative bg-gradient-to-b from-[#4A2C11]/15 via-[#FEFCE8] to-[#FFFBEB]">
-            <div className="absolute top-4 left-4 z-10 px-3 py-1.5 rounded-full bg-white/90 text-xs font-bold text-[#4A2C11] shadow-sm flex items-center gap-1.5">
+          <div className="lg:col-span-6 h-[260px] sm:h-[380px] lg:h-[580px] relative bg-gradient-to-b from-[#4A2C11]/15 via-[#FEFCE8] to-[#FFFBEB]">
+            <div className="absolute top-3 left-3 sm:top-4 sm:left-4 z-10 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-white/90 text-[11px] sm:text-xs font-bold text-[#4A2C11] shadow-sm flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-[#D59B2D] animate-ping" />
               <RotateCw className="w-3.5 h-3.5 text-[#4A2C11]" />
-              <span>360° Interactive 3D Model (Drag to Rotate)</span>
+              <span>360° Interactive (Drag to Rotate)</span>
             </div>
 
             <Canvas camera={{ position: [0, 0.2, 4.8], fov: 42 }}>
@@ -76,13 +76,13 @@ export function Product3DViewerModal({ product, onClose }) {
               <OrbitControls enableZoom={true} minDistance={3} maxDistance={7} />
             </Canvas>
 
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white/90 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-bold text-[#4A2C11] shadow-md border border-[#D59B2D]/30">
+            <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white/90 backdrop-blur-md px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-bold text-[#4A2C11] shadow-md border border-[#D59B2D]/30 whitespace-nowrap">
               Selected 3D Size: {currentSizeObj.weight}
             </div>
           </div>
 
           {/* Right Column: Details */}
-          <div className="lg:col-span-6 p-6 lg:p-8 flex flex-col justify-between space-y-6">
+          <div className="lg:col-span-6 p-4 sm:p-6 lg:p-8 flex flex-col justify-between space-y-4 sm:space-y-6">
             <div>
               <div className="flex items-center gap-2 mb-2">
                 <span className="text-[#2E7D46] font-extrabold text-xs uppercase tracking-wider">

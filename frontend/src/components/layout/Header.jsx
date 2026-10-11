@@ -21,26 +21,26 @@ export function Header() {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 z-40 py-4 sm:py-6 transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <header className="absolute top-0 left-0 right-0 z-40 py-3 sm:py-6 transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 flex items-center justify-between">
           
           {/* 1. Logo */}
           <Link
             to="/"
-            className="flex items-center gap-3 group"
+            className="flex items-center gap-2 sm:gap-3 group"
           >
             <img
               src="/logo.png"
               alt="RS Atta Chakki Logo"
               loading="eager"
               decoding="async"
-              className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-[#4A2C11] shadow-sm group-hover:scale-105 transition-transform"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover shrink-0 border-2 border-[#4A2C11] shadow-sm group-hover:scale-105 transition-transform"
             />
             <div>
-              <span className="block text-xl sm:text-2xl font-black text-[#2E7D46] tracking-tight leading-none font-heading">
+              <span className="block text-lg sm:text-2xl font-black text-[#2E7D46] tracking-tight leading-none font-heading">
                 {siteConfig.brandName}
               </span>
-              <span className="block text-[11px] text-[#7A4E27] font-semibold tracking-wider mt-0.5">
+              <span className="block text-[10px] sm:text-[11px] text-[#7A4E27] font-semibold tracking-wider mt-0.5">
                 100% Fresh Atta
               </span>
             </div>
@@ -70,7 +70,7 @@ export function Header() {
           </nav>
 
           {/* 3. Right Action Buttons */}
-          <div className="flex items-center gap-3.5 sm:gap-5">
+          <div className="flex items-center gap-2 sm:gap-5">
             <a
               href={`tel:${siteConfig.phone}`}
               className="hidden sm:flex items-center gap-2 text-[#4A2C11] hover:text-[#2E7D46] text-[15px] font-bold transition-colors"
@@ -81,10 +81,10 @@ export function Header() {
 
             <button
               onClick={openCart}
-              className="relative p-1.5 text-[#4A2C11] hover:text-[#2E7D46] transition-colors active:scale-95"
+              className="relative p-1 text-[#4A2C11] hover:text-[#2E7D46] transition-colors active:scale-95"
               aria-label="Open Cart"
             >
-              <ShoppingBag className="w-6.5 h-6.5 text-[#2E7D46]" />
+              <ShoppingBag className="w-6 h-6 sm:w-6.5 sm:h-6.5 text-[#2E7D46]" />
               {totalItemsCount > 0 && (
                 <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#D59B2D] text-white text-[10px] font-extrabold flex items-center justify-center shadow">
                   {totalItemsCount}
@@ -98,14 +98,14 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               title="Developed by MBS Technologies"
-              className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1 rounded-xl bg-white/85 hover:bg-white border border-[#D59B2D]/40 hover:border-[#2E7D46] shadow-xs hover:shadow-md transition-all group shrink-0"
+              className="flex items-center gap-1 sm:gap-1.5 p-1 sm:px-2.5 sm:py-1 rounded-xl bg-white/85 hover:bg-white border border-[#D59B2D]/40 hover:border-[#2E7D46] shadow-xs hover:shadow-md transition-all group shrink-0"
             >
               <img
                 src="/mbs_logo.png"
                 alt="MBS Technologies Logo"
                 loading="lazy"
                 decoding="async"
-                className="w-6 h-6 sm:w-6.5 sm:h-6.5 object-contain group-hover:scale-110 transition-transform"
+                className="w-5 h-5 sm:w-6.5 sm:h-6.5 object-contain group-hover:scale-110 transition-transform"
               />
               <span className="hidden md:inline text-[11px] font-black text-[#4A2C11] group-hover:text-[#2E7D46] transition-colors">
                 MBS Tech
@@ -117,7 +117,7 @@ export function Header() {
               className="md:hidden p-1 text-[#4A2C11] hover:text-[#2E7D46]"
               aria-label="Navigation Menu"
             >
-              <Menu className="w-6.5 h-6.5" />
+              <Menu className="w-6 h-6 sm:w-6.5 sm:h-6.5" />
             </button>
           </div>
 

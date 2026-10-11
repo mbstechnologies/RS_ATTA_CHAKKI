@@ -31,26 +31,26 @@ export function About() {
   ];
 
   return (
-    <div className="space-y-20 pb-20 pt-24 sm:pt-28">
+    <div className="space-y-12 sm:space-y-16 lg:space-y-20 pb-16 sm:pb-20 pt-20 sm:pt-28">
       {/* HERO SECTION */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="glass-panel rounded-3xl p-8 sm:p-12 lg:p-14 border border-[#D59B2D]/30 shadow-2xl bg-gradient-to-br from-[#FEFCE8] via-[#FFFBEB] to-[#FEFCE8] relative overflow-hidden">
+        <div className="glass-panel rounded-2xl sm:rounded-3xl p-5 sm:p-10 lg:p-14 border border-[#D59B2D]/30 shadow-2xl bg-gradient-to-br from-[#FEFCE8] via-[#FFFBEB] to-[#FEFCE8] relative overflow-hidden">
           {/* Subtle background grain watermark on the right */}
           <div className="absolute -right-8 -bottom-8 opacity-15 pointer-events-none text-[#D59B2D] hidden lg:block">
             <WheatGrainIcon className="w-72 h-72" color="#D59B2D" />
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-            <div className="lg:col-span-8 space-y-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center relative z-10">
+            <div className="lg:col-span-8 space-y-3 sm:space-y-6">
               <p className="text-[#2E7D46] text-xs sm:text-sm font-bold uppercase tracking-wider">
                 Our Legacy & Story
               </p>
 
-              <h1 className="text-4xl sm:text-5xl font-extrabold text-[#4A2C11] leading-tight">
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[#4A2C11] leading-tight">
                 A Time-Tested Promise of Purity & Taste
               </h1>
 
-              <p className="text-lg text-[#3D230D]/80 leading-relaxed font-normal">
+              <p className="text-sm sm:text-lg text-[#3D230D]/80 leading-relaxed font-normal">
                 {siteConfig.brandName} is not just a business; it is our family commitment to provide every household with unadulterated, nutritious, and fresh flour.
               </p>
             </div>
@@ -59,7 +59,7 @@ export function About() {
             <div className="lg:col-span-4 flex justify-center lg:justify-end">
               <div className="relative group">
                 <div className="absolute -inset-2 bg-gradient-to-r from-[#D59B2D]/20 to-[#2E7D46]/20 rounded-3xl blur-xl opacity-75 group-hover:opacity-100 transition duration-500" />
-                <div className="relative w-48 sm:w-56 lg:w-64 aspect-[1575/998] rounded-3xl bg-white/95 border-2 border-[#D59B2D]/40 shadow-xl flex items-center justify-center p-4 sm:p-5 transition-transform duration-300 hover:scale-105">
+                <div className="relative w-40 sm:w-56 lg:w-64 aspect-[1575/998] rounded-2xl sm:rounded-3xl bg-white/95 border-2 border-[#D59B2D]/40 shadow-xl flex items-center justify-center p-3 sm:p-5 transition-transform duration-300 hover:scale-105">
                   <img
                     src="/logo.png"
                     alt={`${siteConfig.brandName} Logo`}
@@ -96,23 +96,23 @@ export function About() {
 
           <div className="lg:col-span-6">
             <RevealSection delay={0.2}>
-              <div className="glass-card rounded-3xl p-8 border border-[#F5E6B9] shadow-xl space-y-6">
+              <div className="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-[#F5E6B9] shadow-xl space-y-4 sm:space-y-6">
                 <div className="flex items-center gap-3">
-                  <Award className="w-8 h-8 text-[#D59B2D]" />
-                  <h3 className="text-xl font-bold text-[#4A2C11]">Our Mission & Commitment</h3>
+                  <Award className="w-7 h-7 sm:w-8 sm:h-8 text-[#D59B2D]" />
+                  <h3 className="text-lg sm:text-xl font-bold text-[#4A2C11]">Our Mission & Commitment</h3>
                 </div>
 
-                <ul className="space-y-4 text-sm text-[#3D230D]">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#4A2C11] shrink-0 mt-0.5" />
+                <ul className="space-y-3 sm:space-y-4 text-xs sm:text-sm text-[#3D230D]">
+                  <li className="flex items-start gap-2.5 sm:gap-3">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#4A2C11] shrink-0 mt-0.5" />
                     <span>To ensure 100% pure natural nutrition in every single bite.</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#4A2C11] shrink-0 mt-0.5" />
+                  <li className="flex items-start gap-2.5 sm:gap-3">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#4A2C11] shrink-0 mt-0.5" />
                     <span>Traditional stone grinding free from preservatives or maida adulteration.</span>
                   </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#4A2C11] shrink-0 mt-0.5" />
+                  <li className="flex items-start gap-2.5 sm:gap-3">
+                    <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-[#4A2C11] shrink-0 mt-0.5" />
                     <span>Zero compromise on hygiene, customer health, and taste.</span>
                   </li>
                 </ul>
@@ -136,7 +136,7 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
             {/* Store & Milling Machine Photo (img_03.png: 1278x1231 natural shape, zero crop) */}
             <div className="lg:col-span-8">
-              <div className="relative rounded-3xl overflow-hidden border-2 border-[#D59B2D]/40 shadow-2xl group bg-[#FEFCE8] aspect-[1278/1231] w-full">
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#D59B2D]/40 shadow-2xl group bg-[#FEFCE8] aspect-[1278/1231] w-full">
                 <img
                   src="/img_03.png"
                   alt="RS Aata Chakki - Clean Milling Setup and Storefront"
@@ -144,16 +144,16 @@ export function About() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
                 />
-                <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 z-10 bg-black/65 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-white/20 text-white flex items-center justify-between gap-3">
+                <div className="absolute bottom-2.5 sm:bottom-4 left-2.5 sm:left-4 right-2.5 sm:right-4 z-10 bg-black/65 backdrop-blur-md p-2.5 sm:p-4 rounded-xl sm:rounded-2xl border border-white/20 text-white flex items-center justify-between gap-2.5">
                   <div>
                     <h4 className="font-bold text-xs sm:text-sm text-[#FEFCE8]">
                       RS Aata Chakki — Store & Milling Unit
                     </h4>
-                    <p className="text-[11px] sm:text-xs text-white/80">
+                    <p className="text-[10px] sm:text-xs text-white/80">
                       Traditional stone grinding in a 100% dust-free, hygienic environment
                     </p>
                   </div>
-                  <span className="text-[10px] sm:text-xs font-bold bg-[#2E7D46] px-2.5 py-1 rounded-full text-white shrink-0 shadow">
+                  <span className="text-[9px] sm:text-xs font-bold bg-[#2E7D46] px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full text-white shrink-0 shadow">
                     Verified Mill
                   </span>
                 </div>
@@ -162,7 +162,7 @@ export function About() {
 
             {/* Landmark Signboard Photo (img_05.jpeg: 814x1600 natural shape, zero crop) */}
             <div className="lg:col-span-4 flex flex-col justify-start">
-              <div className="relative rounded-3xl overflow-hidden border-2 border-[#D59B2D]/40 shadow-2xl group bg-[#FEFCE8] aspect-[814/1600] w-full max-w-[340px] mx-auto lg:max-w-none">
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-[#D59B2D]/40 shadow-2xl group bg-[#FEFCE8] aspect-[814/1600] w-full max-w-[280px] sm:max-w-[340px] mx-auto lg:max-w-none">
                 <img
                   src="/img_05.jpeg"
                   alt="आर. एस. किसान आटा चक्की - Store Landmark Signboard"
@@ -170,16 +170,16 @@ export function About() {
                   decoding="async"
                   className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
                 />
-                <div className="absolute bottom-3 left-3 right-3 z-10 bg-black/70 backdrop-blur-md p-3 rounded-xl border border-white/20 text-white flex items-center justify-between">
+                <div className="absolute bottom-2.5 left-2.5 right-2.5 sm:bottom-3 sm:left-3 sm:right-3 z-10 bg-black/70 backdrop-blur-md p-2.5 sm:p-3 rounded-xl border border-white/20 text-white flex items-center justify-between">
                   <div>
-                    <h4 className="font-bold text-xs text-[#FEFCE8]">
+                    <h4 className="font-bold text-[11px] sm:text-xs text-[#FEFCE8]">
                       आर. एस. किसान आटा चक्की
                     </h4>
-                    <p className="text-[10px] text-white/80">
+                    <p className="text-[9px] sm:text-[10px] text-white/80">
                       Neighborhood landmark signboard
                     </p>
                   </div>
-                  <span className="text-[9px] font-bold bg-[#D59B2D] px-2 py-0.5 rounded text-white shrink-0">
+                  <span className="text-[8px] sm:text-[9px] font-bold bg-[#D59B2D] px-1.5 sm:px-2 py-0.5 rounded text-white shrink-0">
                     Store Landmark
                   </span>
                 </div>
@@ -188,10 +188,10 @@ export function About() {
           </div>
 
           {/* Full-width Physical Visit Trust Card below both images */}
-          <div className="glass-card rounded-2xl p-5 sm:p-6 border border-[#F5E6B9] shadow-md flex flex-col sm:flex-row items-center justify-between gap-4 mt-6">
+          <div className="glass-card rounded-2xl p-4 sm:p-6 border border-[#F5E6B9] shadow-md flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 mt-6">
             <div className="flex items-start sm:items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[#2E7D46]/10 text-[#2E7D46] flex items-center justify-center shrink-0">
-                <CheckCircle className="w-6 h-6 text-[#2E7D46]" />
+              <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#2E7D46]/10 text-[#2E7D46] flex items-center justify-center shrink-0">
+                <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6 text-[#2E7D46]" />
               </div>
               <div>
                 <h4 className="font-bold text-[#4A2C11] text-sm sm:text-base">
@@ -204,7 +204,7 @@ export function About() {
             </div>
             <a
               href={`tel:${siteConfig.phone}`}
-              className="px-5 py-2.5 rounded-xl bg-[#2E7D46] hover:bg-[#236337] text-white text-xs font-bold shrink-0 shadow transition-all whitespace-nowrap"
+              className="w-full sm:w-auto px-5 py-2.5 rounded-xl bg-[#2E7D46] hover:bg-[#236337] text-white text-xs font-bold shrink-0 shadow transition-all text-center"
             >
               Call for Directions
             </a>
@@ -250,19 +250,19 @@ export function About() {
       {/* CTA SECTION */}
       <section className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <RevealSection>
-          <div className="bg-[#4A2C11] text-white rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl">
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-[#FEFCE8]">
+          <div className="bg-[#4A2C11] text-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 text-center space-y-4 sm:space-y-6 shadow-2xl">
+            <h2 className="text-2xl sm:text-4xl font-extrabold text-[#FEFCE8]">
               Experience Real Freshness & Taste!
             </h2>
-            <p className="text-white/80 max-w-xl mx-auto text-sm sm:text-base">
+            <p className="text-white/80 max-w-xl mx-auto text-xs sm:text-base">
               Explore our range of Shuddh Sharbati and Multigrain flours and place your order today.
             </p>
             <Link
               to="/products"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#D59B2D] text-white font-bold text-base shadow-lg hover:bg-amber-600 transition-all transform hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 sm:px-8 sm:py-4 rounded-full bg-[#D59B2D] text-white font-bold text-sm sm:text-base shadow-lg hover:bg-amber-600 transition-all transform hover:scale-105 active:scale-95"
             >
               <span>Explore Products</span>
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </Link>
           </div>
         </RevealSection>

@@ -22,18 +22,18 @@ export function CartDrawer() {
         className="absolute inset-0 bg-black/60 backdrop-blur-sm"
       />
 
-      <div className="absolute top-0 right-0 bottom-0 w-full max-w-md bg-[#FEFCE8] p-6 shadow-2xl flex flex-col justify-between border-l border-[#D59B2D]/30">
+      <div className="absolute top-0 right-0 bottom-0 w-full max-w-md bg-[#FEFCE8] p-4 sm:p-6 shadow-2xl flex flex-col justify-between border-l border-[#D59B2D]/30">
         <div>
-          <div className="flex items-center justify-between pb-4 border-b border-[#F5E6B9] mb-4">
+          <div className="flex items-center justify-between pb-3.5 sm:pb-4 border-b border-[#F5E6B9] mb-3.5 sm:mb-4">
             <div className="flex items-center gap-2">
-              <ShoppingBag className="w-6 h-6 text-[#4A2C11]" />
-              <h3 className="text-xl font-bold text-[#4A2C11]">
+              <ShoppingBag className="w-5 h-5 sm:w-6 sm:h-6 text-[#4A2C11]" />
+              <h3 className="text-lg sm:text-xl font-bold text-[#4A2C11]">
                 Your Shopping Cart
               </h3>
             </div>
             <button
               onClick={closeCart}
-              className="p-2 rounded-full bg-white text-[#3D230D] border border-[#F5E6B9] hover:bg-[#FFFBEB]"
+              className="p-1.5 sm:p-2 rounded-full bg-white text-[#3D230D] border border-[#F5E6B9] hover:bg-[#FFFBEB]"
               aria-label="Close"
             >
               <X className="w-5 h-5" />

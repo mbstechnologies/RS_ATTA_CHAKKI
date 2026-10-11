@@ -51,11 +51,11 @@ export function ChakkiScene() {
   };
 
   return (
-    <div className="w-full glass-card rounded-3xl p-4 sm:p-5 lg:p-6 border border-[#D59B2D]/30 shadow-2xl">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+    <div className="w-full glass-card rounded-2xl sm:rounded-3xl p-3.5 sm:p-5 lg:p-6 border border-[#D59B2D]/30 shadow-2xl">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-8 items-center">
         {/* Left Column: Stage Photos (Replaces 3D model) */}
         <div className="lg:col-span-6 flex justify-center w-full">
-          <div className="relative w-full max-w-[500px] h-[340px] sm:h-[400px] lg:h-[440px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#FFFDF7] via-[#FAF5EA] to-[#F5EED8] border border-[#E8D4A2] shadow-xl group flex items-center justify-center p-2 sm:p-3">
+          <div className="relative w-full max-w-[500px] h-[270px] sm:h-[380px] lg:h-[440px] rounded-2xl overflow-hidden bg-gradient-to-b from-[#FFFDF7] via-[#FAF5EA] to-[#F5EED8] border border-[#E8D4A2] shadow-xl group flex items-center justify-center p-2 sm:p-3">
             <img
               src={stageData[activeStage].image}
               alt={stageData[activeStage].title}
@@ -68,18 +68,18 @@ export function ChakkiScene() {
             {/* Navigation Arrows */}
             <button
               onClick={handlePrev}
-              className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-[#4A2C11] shadow-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110 active:scale-95 z-10 border border-[#D59B2D]/30"
+              className="absolute left-2 sm:left-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/90 hover:bg-white text-[#4A2C11] shadow-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110 active:scale-95 z-10 border border-[#D59B2D]/30"
               aria-label="Previous Stage"
             >
-              <ChevronLeft className="w-5 h-5" />
+              <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
 
             <button
               onClick={handleNext}
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 hover:bg-white text-[#4A2C11] shadow-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110 active:scale-95 z-10 border border-[#D59B2D]/30"
+              className="absolute right-2 sm:right-3 top-1/2 -translate-y-1/2 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/90 hover:bg-white text-[#4A2C11] shadow-lg flex items-center justify-center transition-all duration-200 transform hover:scale-110 active:scale-95 z-10 border border-[#D59B2D]/30"
               aria-label="Next Stage"
             >
-              <ChevronRight className="w-5 h-5" />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
         </div>
