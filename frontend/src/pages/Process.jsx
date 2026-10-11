@@ -69,6 +69,8 @@ export function Process() {
                   <img
                     src="/03.png"
                     alt="RS Kissan Fresh Atta - Premium Moisture-Lock Packaging"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   />
 

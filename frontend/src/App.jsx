@@ -23,14 +23,41 @@ function ScrollToTop() {
   return null;
 }
 
+// Critical front-page assets preloaded during Earth loader
+const FRONT_PAGE_IMAGES = [
+  '/logo.png',
+  '/hero_atta.png',
+  '/img_1.jpeg',
+  '/img_04.png',
+  '/01.png',
+  '/02.png',
+  '/03.png',
+  '/mbs_logo.png'
+];
+
+function preloadImages(urls) {
+  return Promise.all(
+    urls.map((url) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = url;
+        img.onload = resolve;
+        img.onerror = resolve; // Continue on error without blocking
+      });
+    })
+  );
+}
+
 export default function App() {
   const [initialLoading, setInitialLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const minLoaderTime = new Promise((resolve) => setTimeout(resolve, 900));
+    const imagesPromise = preloadImages(FRONT_PAGE_IMAGES);
+
+    Promise.all([minLoaderTime, imagesPromise]).then(() => {
       setInitialLoading(false);
-    }, 1200);
-    return () => clearTimeout(timer);
+    });
   }, []);
 
   return (

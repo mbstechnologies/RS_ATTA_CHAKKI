@@ -32,6 +32,8 @@ export function Header() {
             <img
               src="/logo.png"
               alt="RS Atta Chakki Logo"
+              loading="eager"
+              decoding="async"
               className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-[#4A2C11] shadow-sm group-hover:scale-105 transition-transform"
             />
             <div>
@@ -101,6 +103,8 @@ export function Header() {
               <img
                 src="/mbs_logo.png"
                 alt="MBS Technologies Logo"
+                loading="lazy"
+                decoding="async"
                 className="w-6 h-6 sm:w-6.5 sm:h-6.5 object-contain group-hover:scale-110 transition-transform"
               />
               <span className="hidden md:inline text-[11px] font-black text-[#4A2C11] group-hover:text-[#2E7D46] transition-colors">

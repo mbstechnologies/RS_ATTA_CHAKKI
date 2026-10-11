@@ -17,6 +17,8 @@ export function Footer() {
               <img
                 src="/logo.png"
                 alt="RS Atta Chakki Logo"
+                loading="lazy"
+                decoding="async"
                 className="w-12 h-12 rounded-full object-cover shrink-0 border-2 border-[#4A2C11] shadow-lg"
               />
               <div>

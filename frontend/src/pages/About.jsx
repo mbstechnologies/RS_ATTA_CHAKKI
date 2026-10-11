@@ -63,6 +63,8 @@ export function About() {
                   <img
                     src="/logo.png"
                     alt={`${siteConfig.brandName} Logo`}
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain drop-shadow-xs"
                   />
                 </div>
@@ -138,6 +140,8 @@ export function About() {
                 <img
                   src="/img_03.png"
                   alt="RS Aata Chakki - Clean Milling Setup and Storefront"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 right-3 sm:right-4 z-10 bg-black/65 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-white/20 text-white flex items-center justify-between gap-3">
@@ -162,6 +166,8 @@ export function About() {
                 <img
                   src="/img_05.jpeg"
                   alt="आर. एस. किसान आटा चक्की - Store Landmark Signboard"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 right-3 z-10 bg-black/70 backdrop-blur-md p-3 rounded-xl border border-white/20 text-white flex items-center justify-between">

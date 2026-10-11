@@ -60,6 +60,8 @@ export function ChakkiScene() {
               src={stageData[activeStage].image}
               alt={stageData[activeStage].title}
               key={activeStage}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-contain transition-all duration-500 group-hover:scale-[1.01]"
             />
 

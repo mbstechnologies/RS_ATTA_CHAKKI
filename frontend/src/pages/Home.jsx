@@ -164,6 +164,8 @@ export function Home() {
                 <img
                   src="/img_1.jpeg"
                   alt="R.S. Kissan Fresh Atta - Happy Family Eating Fresh Rotis"
+                  loading="eager"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-[1.01] transition-transform duration-700"
                 />
 
@@ -404,6 +406,8 @@ export function Home() {
                 <img
                   src="/img_04.png"
                   alt="Pure Aata - RS Aata Chakki Quality Commitment"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>

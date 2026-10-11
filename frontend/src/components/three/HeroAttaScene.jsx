@@ -20,6 +20,9 @@ export function HeroAttaScene({ brandName = "Shuddh Chakki Atta", weight = "5 kg
         src={imgSrc}
         alt={`${brandName} - ${weight}`}
         onError={handleError}
+        loading="eager"
+        fetchPriority="high"
+        decoding="async"
         className="w-full h-full object-cover object-center"
       />
     </div>
