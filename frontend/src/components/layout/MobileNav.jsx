@@ -83,6 +83,18 @@ export function MobileNav({ isOpen, onClose, navLinks }) {
             <Phone className="w-4 h-4" />
             Call Now ({siteConfig.phone})
           </a>
+
+          <div className="pt-2 text-center">
+            <a
+              href="https://mbstechnologies.indevs.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-xs text-[#7A4E27] hover:text-[#2E7D46] font-bold"
+            >
+              <img src="/mbs_logo.png" alt="MBS Tech" className="w-4 h-4 object-contain inline" />
+              <span>Made by MBS Technologies</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

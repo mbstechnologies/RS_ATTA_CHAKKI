@@ -68,7 +68,7 @@ export function Header() {
           </nav>
 
           {/* 3. Right Action Buttons */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3.5 sm:gap-5">
             <a
               href={`tel:${siteConfig.phone}`}
               className="hidden sm:flex items-center gap-2 text-[#4A2C11] hover:text-[#2E7D46] text-[15px] font-bold transition-colors"
@@ -89,6 +89,24 @@ export function Header() {
                 </span>
               )}
             </button>
+
+            {/* MBS Technologies Agency Link & Logo (Right to Cart Button) */}
+            <a
+              href="https://mbstechnologies.indevs.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Developed by MBS Technologies"
+              className="flex items-center gap-1.5 p-1 sm:px-2.5 sm:py-1 rounded-xl bg-white/85 hover:bg-white border border-[#D59B2D]/40 hover:border-[#2E7D46] shadow-xs hover:shadow-md transition-all group shrink-0"
+            >
+              <img
+                src="/mbs_logo.png"
+                alt="MBS Technologies Logo"
+                className="w-6 h-6 sm:w-6.5 sm:h-6.5 object-contain group-hover:scale-110 transition-transform"
+              />
+              <span className="hidden md:inline text-[11px] font-black text-[#4A2C11] group-hover:text-[#2E7D46] transition-colors">
+                MBS Tech
+              </span>
+            </a>
 
             <button
               onClick={() => setMobileMenuOpen(true)}

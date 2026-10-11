@@ -81,6 +81,23 @@ AATA_CHAKKI/
 
 ---
 
+## ⚡ Deploy to Vercel
+
+### Method 1: Via GitHub (Recommended)
+1. Push this repository to your GitHub account (`git push origin main`).
+2. Go to [vercel.com](https://vercel.com) and log in.
+3. Click **Add New...** → **Project** and select this repository.
+4. Vercel will automatically detect `vercel.json` and build settings.
+5. Click **Deploy**. Your site will be live within 1 minute!
+
+### Method 2: Via Vercel CLI
+```bash
+npx vercel
+```
+Follow the interactive prompts to deploy directly from terminal.
+
+---
+
 ## 📞 Business & Contact Information
 
 - **Brand**: RS Atta Chakki

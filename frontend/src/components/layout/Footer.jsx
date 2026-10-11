@@ -104,11 +104,19 @@ export function Footer() {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#FEFCE8]/60 gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-[#FEFCE8]/70 gap-4">
           <p>© {new Date().getFullYear()} {siteConfig.brandName}. All Rights Reserved.</p>
-          <div className="flex items-center gap-1">
-            <span>Dedicated to Your Family's Health</span>
-            <Heart className="w-3.5 h-3.5 text-amber-400 fill-amber-400 inline" />
+          <div className="flex items-center gap-1.5">
+            <span>Made with <Heart className="w-3.5 h-3.5 text-amber-400 fill-amber-400 inline mx-0.5" /> by</span>
+            <a
+              href="https://mbstechnologies.indevs.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#D59B2D] hover:text-white font-extrabold underline underline-offset-4 transition-colors inline-flex items-center gap-1.5"
+            >
+              <img src="/mbs_logo.png" alt="MBS Technologies" className="w-4 h-4 object-contain inline" />
+              <span>MBS Technologies</span>
+            </a>
           </div>
         </div>
       </div>
