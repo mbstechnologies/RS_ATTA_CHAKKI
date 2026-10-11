@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-light-yellow: #FEFCE8;
+  --color-light-yellow-card: #FFFDE7;
+  --color-light-yellow-warm: #FFFBEB;
+  
+  --color-brown-dark: #3D230D;
+  --color-brown: #4A2C11;
+  --color-brown-light: #5C3818;
+  
+  --color-green-brand: rgb(46, 125, 70);
+  
+  --color-gold: #D59B2D;
+  --color-gold-light: #E5AC39;
+  --color-gold-dark: #A6751C;
+  
+  --font-heading: 'Baloo 2', 'Baloo 2 Fallback', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Outfit', 'Mukta', sans-serif;
+}
+
+:root {
+  font-family: 'Outfit', 'Mukta', sans-serif;
+  color-scheme: light;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: "Baloo 2", "Baloo 2 Fallback", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #FEFCE8;
+  color: #3D230D;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(255, 253, 231, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(213, 155, 45, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 254, 240, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(245, 230, 185, 0.9);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, rgb(46, 125, 70) 0%, #D59B2D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

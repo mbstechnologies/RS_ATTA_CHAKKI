@@ -1,0 +1,58 @@
+<svg viewBox="0 0 500 500" fill="none" stroke="#4A2C11" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+  <!-- 1. Bottom Stone Layer Cylinder Outline -->
+  <path
+    d="M 35 300 C 35 390 465 390 465 300 L 465 365 C 465 455 35 455 35 365 Z"
+    fill="none"
+  />
+
+  <!-- 2. Middle Joint Layer Outline -->
+  <path
+    d="M 35 235 C 35 325 465 325 465 235 L 465 300 C 465 390 35 390 35 300 Z"
+    fill="none"
+  />
+
+  <!-- 3. Top Stone Disc Main Surface Outline -->
+  <path
+    d="M 35 235 C 35 145 465 145 465 235 C 465 325 35 325 35 235 Z"
+    fill="none"
+  />
+
+  <!-- Top Surface Accent Curved Groove -->
+  <path
+    d="M 80 220 C 100 280 200 300 250 300"
+    stroke-width="10"
+    fill="none"
+  />
+
+  <!-- 4. Center Feed Hole Outline -->
+  <ellipse
+    cx="250"
+    cy="235"
+    rx="45"
+    ry="24"
+    fill="none"
+    stroke-width="12"
+  />
+  <path
+    d="M 205 235 C 205 255 295 255 295 235 C 295 242 205 242 205 235 Z"
+    fill="none"
+    stroke-width="8"
+  />
+
+  <!-- 5. Handle Socket Base Rim Outline -->
+  <ellipse
+    cx="370"
+    cy="205"
+    rx="28"
+    ry="15"
+    fill="none"
+    stroke-width="12"
+  />
+
+  <!-- 6. Vertical Wooden Peg Handle Outline -->
+  <path
+    d="M 354 75 C 354 55 386 55 386 75 L 386 205 C 386 210 354 210 354 205 Z"
+    fill="none"
+    stroke-width="12"
+  />
+</svg>
